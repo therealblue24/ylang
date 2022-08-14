@@ -41,6 +41,10 @@ int a;              /*  32-bits */
 unsigned int a;
 long a;             /*  64-bits */
 unsigned long a;
+float a;
+double a;             /* Standard IEEE754 Floats
+                            float = float32
+                            double = float64 */
 void a;             /*  C Void */
 auto a;             /*  Autos! */
 ```
@@ -51,7 +55,7 @@ int myFunction(void *ptr, void ref&, void normal);
 ```
 "Short" Functions:
 ```c
-int &[myFunction](void *ptr, void ref&, void normal) = {
+auto myFunction = [&](void *ptr, void ref&, void normal) -> int {
     return 1; /* FYI: call this function using myFunction(...)
                 Just because this declaration style doesn't mean the
                 way to call the function is different. */
@@ -83,5 +87,52 @@ union uniform_char { /* Same thing as C union. */
     unsigned char b;
 };
 ```
+Enums and Typedefs
+```c
+short enum A {
+    BBB = -1,
+    AAA
+};
 
-
+typedef struct myStruct myStruct;
+myStruct enum B {
+    FFF = struct_ref,
+    GGG = struct_ref2
+};
+```
+Const, Extern, Static
+```c
+const double pi = 3.14159265358979323f;
+pi = 3.14f; /* ERROR: Not Allowed, pi is constant */
+static int counter = 0; /* Static vars are only allowed in the file they are
+                           defined in */
+float pi32 = 3.14159265358f;
+/* Meanwhile, in another file... */
+extern float pi32;
+```
+### !!! Volatile is the same as it is in C. !!!
+constexpr, and expr get evaluated by the compiler whenever you use it.
+```c
+constexpr double pi = 3.14159265358979323f; /* Constant */
+expr int magic_number = 65527; /* Not a Constant */
+int j = 0; /* counter */
+constexpr int k = j + 1;
+```
+## Preprocessors
+Same Preprocessors as C.
+```c
+#define MESSAGE "Hello, World!"
+#include <stdio.h>
+#define FAULTY_MACRO "aujshaidhus"
+#undef FAULTY_MACRO
+#ifdef MESSAGE
+#else
+#define MESSAGE "Hello, World!"
+#endif
+#ifndef FAULTY_MACRO
+#define CLEAN 1
+#else
+#define CLEAN 0
+#endif
+```
+There are more Preprocessors left out, but they litterly have the same funcionaly as they do in C.
