@@ -95,10 +95,7 @@ short enum A {
 };
 
 typedef struct myStruct myStruct;
-myStruct enum B {
-    FFF = struct_ref,
-    GGG = struct_ref2
-};
+typedef long 64_bit_number;
 ```
 Const, Extern, Static
 ```c
@@ -143,3 +140,5 @@ There are more Preprocessors left out, but they litterly have the same funcional
 ### About Y Header Files
 They are compatible with C Headers. But C Headers are Not
 compatible with Y Headers.
+### Standard Library
+Y imports libc, and liby, which is a extra set of functions for y.
