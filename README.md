@@ -54,7 +54,7 @@ Functions:
 int myFunction(void *ptr, void ref&, void normal);
 ```
 "Short" Functions:
-```c
+```cpp
 auto myFunction = [&](void *ptr, void ref&, void normal) -> int {
     return 1; /* FYI: call this function using myFunction(...)
                 Just because this declaration style doesn't mean the
