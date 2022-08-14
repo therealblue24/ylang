@@ -140,5 +140,6 @@ There are more Preprocessors left out, but they litterly have the same funcional
 ### File Extensions
 * *.y - Y Source File
 * *.h - Y Header File
-About Y Header Files, they are compatible with C Headers. But C Headers are Not
+### About Y Header Files
+They are compatible with C Headers. But C Headers are Not
 compatible with Y Headers.
