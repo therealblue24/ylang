@@ -29,6 +29,8 @@ int Start(int argc, char *argv[]);
 int start(int argc, char *argv[]);
 int entry(int argc, char *argv[]);
 ```
+# Syntax and Types
+
 There are also types like in C:
 ```c
 char a;             /*  8-bits */
@@ -40,5 +42,10 @@ unsigned int a;
 long a;             /*  64-bits */
 unsigned long a;
 void a;             /*  C Void */
+auto a;             /*  Autos! */
 ```
+Functions:
 
+```c
+int myFunction(void *ptr, void ref&, void normal);
+```
