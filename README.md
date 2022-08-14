@@ -52,7 +52,9 @@ int myFunction(void *ptr, void ref&, void normal);
 "Short" Functions:
 ```c
 int &[myFunction](void *ptr, void ref&, void normal) = {
-    return 1;
+    return 1; /* FYI: call this function using myFunction(...)
+                Just because this declaration style doesn't mean the
+                way to call the function is different. */
 }
 ```
 While, For, If {else}
