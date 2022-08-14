@@ -21,13 +21,13 @@ int main(int argc, char *argv[]) {
 ```
 like classic C. Vaild main function names are as precisly follows:
 ```c
-int Main(int argc, char *argv[])
-int main(int argc, char *argv[])
-int _start(int argc, char *argv[])
-int _Start(int argc, char *argv[])
-int Start(int argc, char *argv[])
-int start(int argc, char *argv[])
-int entry(int argc, char *argv[])
+int Main(int argc, char *argv[]);
+int main(int argc, char *argv[]);
+int _start(int argc, char *argv[]);
+int _Start(int argc, char *argv[]);
+int Start(int argc, char *argv[]);
+int start(int argc, char *argv[]);
+int entry(int argc, char *argv[]);
 ```
 There are also types like in C:
 ```c
