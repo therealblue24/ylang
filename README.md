@@ -88,7 +88,7 @@ union uniform_char { /* Same thing as C union. */
 };
 ```
 Enums and Typedefs
-```c
+```cpp
 short enum A {
     BBB = -1,
     AAA
@@ -112,7 +112,7 @@ extern float pi32;
 ```
 ### !!! Volatile is the same as it is in C. !!!
 constexpr, and expr get evaluated by the compiler whenever you use it.
-```c
+```cpp
 constexpr double pi = 3.14159265358979323f; /* Constant */
 expr int magic_number = 65527; /* Not a Constant */
 int j = 0; /* counter */
@@ -136,3 +136,9 @@ Same Preprocessors as C.
 #endif
 ```
 There are more Preprocessors left out, but they litterly have the same funcionaly as they do in C.
+
+### File Extensions
+* *.y - Y Source File
+* *.h - Y Header File
+About Y Header Files, they are compatible with C Headers. But C Headers are Not
+compatible with Y Headers.
