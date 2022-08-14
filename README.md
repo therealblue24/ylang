@@ -49,3 +49,37 @@ Functions:
 ```c
 int myFunction(void *ptr, void ref&, void normal);
 ```
+"Short" Functions:
+```c
+int &[myFunction](void *ptr, void ref&, void normal) = {
+    return 1;
+}
+```
+While, For, If {else}
+```c
+while(x > 1) {
+    for(int j=0;j<8;j++) {
+        if(j == x) {
+            /* Do something! */
+        } else if(j == 5) {
+            /* Do something! */
+        } else {
+            /* Fallback! */
+        }
+    }
+}
+```
+Structs and Unions
+```c
+struct State {
+    long unix_timestamp;
+    union uniform_char keyboard[26];
+};
+
+union uniform_char { /* Same thing as C union. */
+    char a;
+    unsigned char b;
+};
+```
+
+
