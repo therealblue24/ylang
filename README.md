@@ -32,6 +32,9 @@ float a;
 double a;             /* Standard IEEE754 Floats
                             float = float32
                             double = float64 */
+long long a; /* 128-bits */
+unsigned long long a;
+
 void a;             /*  C Void */
 auto a;             /*  Autos! */
 ```
