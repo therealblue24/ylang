@@ -5,29 +5,16 @@ any C code.
 ## Main function
 The Main function of a Y program is defined as follows:
 ```c
-int Main(int argc, char *argv[]) {
-    return 0; /* Returns 0: Sucess
-               *         1: Not-A-Sucess
-               */
-}
-```
-...or you can just use
-```c
 int main(int argc, char *argv[]) {
     return 0; /* Returns 0: Sucess
                *         1: Not-A-Sucess
                */
 }
 ```
-like classic C. Vaild main function names are as precisly follows:
+Vaild main function names are as precisly follows:
 ```c
-int Main(int argc, char *argv[]);
 int main(int argc, char *argv[]);
 int _start(int argc, char *argv[]);
-int _Start(int argc, char *argv[]);
-int Start(int argc, char *argv[]);
-int start(int argc, char *argv[]);
-int entry(int argc, char *argv[]);
 ```
 # Syntax and Types
 
@@ -52,14 +39,6 @@ Functions:
 
 ```c
 int myFunction(void *ptr, void ref&, void normal);
-```
-"Short" Functions:
-```cpp
-auto myFunction = [&](void *ptr, void ref&, void normal) -> int {
-    return 1; /* FYI: call this function using myFunction(...)
-                Just because this declaration style doesn't mean the
-                way to call the function is different. */
-}
 ```
 While, For, If {else}
 ```c
