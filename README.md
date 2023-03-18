@@ -79,6 +79,14 @@ short enum A {
 typedef struct myStruct myStruct;
 typedef long 64_bit_number;
 ```
+you can also do C23 enums
+```c
+enum A : short {
+    BBB = some_val,
+    AAA = another_val,
+    CCC += 1,
+};
+```
 Const, Extern, Static
 ```c
 const double pi = 3.14159265358979323f;
